@@ -1,0 +1,91 @@
+.PS-table-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PS-financial-table{
+    background-color: white;
+}
+
+@media screen and (min-width: 510px) and (max-width: 768px)  {
+   
+    .PS-filter-section{
+        display: inline-flex;
+    }
+
+}
+@media screen and (max-width: 510px){   
+    .PS-filter-section{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+       margin: auto ;
+    }
+}
+
+.PS-filter-section-container{
+   display: flex;
+   text-align: left;
+   
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
+}
+
+.PS-info-icon {
+    margin-left: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+
+.PS-financial-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.PS-table-header {
+    
+    background-color: #b8b5b3 !important;
+    color: rgb(17, 17, 17) !important;
+    text-align: center !important;
+    padding: 10px !important;
+    font-size: 1.2em !important;
+}
+
+.PS-financial-table th,
+.PS-financial-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.PS-financial-table th {
+    background-color: #023e70;
+    color: white;
+}
+
+.PS-financial-table td {
+    text-align: left;
+    padding-right: 0.4rem;
+}
+
+.PS-financial-table tbody tr:last-child td {
+    font-weight: bold;
+}
+
+.PS-financial-table tbody tr:last-child td:first-child {
+    text-align: left;
+}
+
+.PS-financial-table tbody tr:last-child td:nth-child(2) {
+    text-align: left;
+}
+

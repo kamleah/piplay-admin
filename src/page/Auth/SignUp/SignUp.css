@@ -1,0 +1,8 @@
+.signup-card {
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e8e8f7;
+    background: linear-gradient(165deg,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9));
+}

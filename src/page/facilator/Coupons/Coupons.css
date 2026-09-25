@@ -1,0 +1,30 @@
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.search-bar1 {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between !important; */
+}
+
+.btn-addNewCoupon {
+    border-radius: 30px;
+    /* font-weight: bold; */
+    background: #f17121;
+    height: 100%;
+    border: none;
+    color: #fff;
+}
+
+.search-input {
+    border-radius: 40px;
+    height: 100%;
+    width:25% !important;
+}
+.btn-cancel {
+    border-radius: 30px;
+    height: 100%;
+}

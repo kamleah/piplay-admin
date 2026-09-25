@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Event Registration Confirmation</title>
+     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+     * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+     }
+
+     body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+     }
+
+     .registration-card {
+          width: 400px;
+          margin: 20px auto;
+          background-color: #051B2C;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     }
+
+     .header {
+          text-align: center;
+     }
+
+     .success-icon {
+          width: 60px;
+          height: 60px;
+          margin: 10px 0;
+     }
+
+     .success-text-header {
+          margin-bottom: 15px;
+     }
+
+     .success-text-subheader {
+          margin-bottom: 15px;
+     }
+
+     .label {
+          color: #888794;
+          font-size: 16px;
+          margin-right: 5px;
+     }
+
+     .event-details {
+          border-top: 1px solid #2D4251;
+          padding-top: 10px;
+
+     }
+
+     .event-info {
+          border-top: 1px solid #444;
+          padding-top: 10px;
+     }
+
+     .event-id h2 {
+          color: #e37432;
+     }
+
+     .organiser-name {
+          margin: 3px 0;
+     }
+
+     .organiser-text {
+          font-size: 14px;
+          margin-bottom: 3px;
+     }
+
+     .booking-id {
+          margin-bottom: 10px;
+     }
+
+     .event-info-table {
+          margin-bottom: 10px;
+     }
+
+     table {
+          border-spacing: 5px;
+          border-collapse: collapse;
+     }
+
+     .table-full-width {
+          width: 100%;
+          border-collapse: collapse;
+          color: white;
+     }
+
+     table td {
+          padding-right: 3px;
+          padding-top: 5px;
+          vertical-align: top;
+     }
+
+     .facilitator-card {
+          background-color: #172C3B;
+          padding: 8px 12px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+     }
+
+     .facilitator-logo {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          border: .5px solid #dfdfdf;
+
+     }
+
+     .organiser-logo {
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          border: .5px solid #dfdfdf;
+
+     }
+
+     .player-img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: .5px solid #dfdfdf;
+          object-fit: cover;
+
+     }
+
+     .player-name {
+          margin: 3px 0;
+          font-size: 20px;
+     }
+
+     .registered-player {
+          padding-top: 10px;
+     }
+
+     .player-photo {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+     }
+
+     .payment-info {
+          border-top: 1px solid #444;
+          padding-top: 10px;
+     }
+
+     .price {
+          text-align: right;
+          font-weight: bold;
+     }
+
+     .action-button {
+          text-align: center;
+          margin-top: 20px;
+     }
+
+     button {
+          width: 100%;
+          background-color: #e37432;
+          color: white;
+          border: none;
+          padding: 12px 80px 12px 80px;
+          border-radius: 21px;
+          cursor: pointer;
+     }
+
+     button:hover {
+          background-color: darkorange;
+     }
+
+     .organiser-section {
+          margin-bottom: 10px;
+     }
+
+     .organiser-info {
+          margin-left: 5px;
+     }
+
+     .rating {
+          background-color: #343347;
+          border-radius: 12px;
+          padding: 3px 6px;
+
+          display: flex;
+          align-items: center;
+     }
+
+     .star {
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+     }
+
+     .rating-text {
+          font-size: 12px;
+          color: white;
+     }
+
+     .registered-player-header {
+          margin-bottom: 10px;
+     }
+
+     .gst td {
+          padding-bottom: 7px;
+     }
+
+     .total-price td {
+          border-top: 1px solid #2D4251;
+          padding-top: 7px;
+     }
+
+     /* Skill Labels  */
+     .label-outer {
+          min-width: 100px;
+          max-width: 120px;
+          border-radius: 20px;
+          align-Items: center;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          background: #fff;
+     }
+
+     .label-inner {
+          padding: 3px 5px;
+          border-radius: 20px;
+          font-size: 10px;
+          font-weight: 500;
+          color: #000;
+     }
+
+     .Beginner-outer {
+          border: 1px solid #6CD24B;
+     }
+
+     .Beginner-inner {
+          width: 30%;
+          background-color: #6CD24B;
+     }
+
+     .Intermediate-outer {
+          border: 1px solid #FCAA05;
+     }
+
+     .Beginner-outer {
+          border: 1px solid #6CD24B;
+     }
+
+     .Beginner-inner {
+          width: 30%;
+          background-color: #6CD24B;
+     }
+
+     .Amateur-outer {
+          border: 1px solid #FCAA05;
+     }
+
+     .Amateur-inner {
+          width: 60%;
+          background-color: #FCAA05;
+     }
+
+     .Intermediate-outer {
+          border: 1px solid #FD674D;
+     }
+
+     .Intermediate-inner {
+          width: 75%;
+          background-color: #FD674D;
+          color: #fff;
+     }
+
+     .Advance-outer,
+     .Advanced-outer {
+          border: 1px solid #E43836;
+     }
+
+     .Advance-inner,
+     .Advanced-inner {
+          width: 95%;
+          background-color: #E43836;
+          color: #fff;
+     }
+</style>
+
+<body>
+     <div class="registration-card">
+          <div class="header">
+               <img src="https://s3.ap-south-1.amazonaws.com/media.pi-play.com/events/1713773409_sfsd_organizers_icon_Vector.png"
+                    class="success-icon">
+               <h2 class="success-text-header">Yay! You have Successfully Registered!</h2>
+               <p class="success-text-subheader">See you on court soon!</p>
+          </div>
+
+          <div class="event-details">
+               <div class="event-id">
+                    <h2>Event ID</h2>
+                    <p class="booking-id">#PADIND89676557</p>
+               </div>
+
+
+               <div class="event-info-table">
+                    <table class="table-full-width">
+                         <tr>
+                              <td><span class="label">Name:</span></td>
+                              <td>Men's Open Tournament</td>
+                              <td><span class="label">Type:</span></td>
+                              <td>Indoor</td>
+                         </tr>
+                         <tr>
+                              <td><span class="label">Slot:</span> </td>
+                              <td>Tue, 23 Jan 9:00 AM - 9:30 PM</td>
+                              <td><span class="label">Sport:</span></td>
+                              <td>Padel</td>
+                         </tr>
+                    </table>
+               </div>
+          </div>
+
+          <div class="organiser-section">
+
+               <table>
+                    <tr>
+                         <td>
+                              <img src="https://s3.ap-south-1.amazonaws.com/media.pi-play.com/events/1713773409_sfsd_organizers_icon_Vector.png"
+                                   width="40" height="40" class="organiser-logo">
+                         </td>
+                         <td>
+                              <div class="organiser-info">
+                                   <h4 class="organiser-name">Pi Play</h4>
+                                   <p class="organiser-text">Organiser</p>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+
+          <div class="facilitator-card">
+               <table>
+                    <tr>
+                         <td>
+                              <img src="https://s3.ap-south-1.amazonaws.com/media.pi-play.com/events/1708327394_Padel India_organizers_icon_PadelIndiaLogo.jpeg"
+                                   class="facilitator-logo">
+                              <div class="rating">
+                                   <img src="https://s3.ap-south-1.amazonaws.com/media.pi-play.com/events/1713785549_star_organizers_icon_Vector (1).png"
+                                        class="star">
+                                   <span class="rating-text">4.5</span>
+                              </div>
+                         </td>
+                         <td>
+                              <div class="organiser-info">
+                                   <h4 class="organiser-name">Atlant Sports Club</h4>
+                                   <p class="organiser-text">Phase 4, J.P. Nagar, Bengaluru</p>
+                                   <p class="organiser-text">+91 83695 57112 / +91 84339 58743</p>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+
+          <h3 class="registered-player-header">Registered Player</h3>
+
+          <div class="facilitator-card">
+               <table>
+                    <tr>
+                         <td>
+                              <img src="https://s3.ap-south-1.amazonaws.com/media.pi-play.com/events/1713682425_offerImage_1713348777_offerImage_WhatsApp Image 2024-04-17 at 3.39.10 PM (1).jpeg"
+                                   class="player-img">
+                         </td>
+                         <td>
+                              <div class="organiser-info">
+                                   <p class="player-name">Arun Karthigeyan</p>
+                                   <div class="label-outer Amateur-outer">
+                                        <div class="label-inner Amateur-inner">Amateur</div>
+                                   </div>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+          <h3 class="registered-player-header">Amount Paid</h3>
+
+          <div class="facilitator-card ">
+               <table class="table-full-width">
+                    <tr>
+                         <td>2 x Players:</td>
+                         <td class="price">₹250.00</td>
+                    </tr>
+                    <tr class="gst">
+                         <td>GST (18%):</td>
+                         <td class="price">₹45.00</td>
+                    </tr>
+                    <tr class="total-price">
+                         <td>Total:</td>
+                         <td class="price">₹295.00</td>
+                    </tr>
+               </table>
+          </div>
+
+          <div class="action-button">
+               <button>Go to My Events</button>
+          </div>
+     </div>
+</body>
+
+</html>

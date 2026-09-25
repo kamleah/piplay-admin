@@ -1,0 +1,35 @@
+.events-submitButton {
+    border-radius: 30px !important;
+    color: #f17121 !important;
+    border: 1px solid #f17121;
+    background: #ffffff;
+    padding: 4px 15px;
+    font-size: 14px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.events-submitButton:hover {
+    border-radius: 30px !important;
+    color: #f17121 !important;
+    border: 1px solid #f17121 !important;
+    background: #ffffff;
+}
+
+.events-cancelButton {
+    border-radius: 30px;
+    border: 1px solid #b7b7b7 !important;
+    color: #b7b7b7 !important;
+    padding: 4px 15px;
+    margin-left: 8px;
+    font-size: 14px;
+    height: 32px;
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+.events-cancelButton:hover {
+    border-radius: 30px;
+    border: 1px solid #b7b7b7 !important;
+    color: #b7b7b7 !important;
+}

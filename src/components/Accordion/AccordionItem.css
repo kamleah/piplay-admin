@@ -1,0 +1,28 @@
+.accordion-item.active {
+     display: block;
+}
+
+.accordion-item button {
+     width: 100%;
+     text-align: left;
+     outline: none;
+     display: flex;
+     justify-content: space-between;
+     background: transparent;
+     border: none;
+     color: #fff;
+}
+
+.accordion-item button.active {
+     color: #A89968;
+}
+
+.accordion-content {
+     overflow: hidden;
+     transition: max-height 0.5s ease-in-out;
+     max-height: 0;
+}
+
+.accordion-content.active {
+     max-height: max-content !important;
+}

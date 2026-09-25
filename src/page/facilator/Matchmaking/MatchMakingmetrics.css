@@ -1,0 +1,16 @@
+.custom-scrollbar {
+  padding-right: 10px; /* Creates space on the right side of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff7f50; /* Orange color for the scrollbar thumb */
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}

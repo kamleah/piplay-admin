@@ -1,0 +1,135 @@
+{
+  "slotsInfos": [
+    {
+      "id": "11052023",
+      "selected_date": "11052023",
+      "slots_details": {
+        "total_bookings": "671",
+        "confirm_bookings": "598",
+        "new_bookings": "51",
+        "rejected_bookings": "23",
+        "slots_info_by_courts": {
+          "court A": {
+            "8-9": "Available",
+            "9-10": {
+              "status": "Booked",
+              "no_of_hours": 1,
+              "booking_info": {
+                "img_src": "../assets/images/sujeet_soni_pp.jpeg",
+                "booked_by": "Sujeet Soni",
+                "booked_datetime": "28/04/2023 15:03:56.456",
+                "is_new_joinee": true
+              }
+            },
+            "11-12": "Available",
+            "12-13": "Available",
+            "13-14": "Available",
+            "14-15": "Available",
+            "15-16": "Available",
+            "16-17": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/rudransh_soni_pp.jpeg",
+                "booked_by": "Rudransh Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            },
+            "17-18": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/rudransh_soni_pp.jpeg",
+                "booked_by": "Rudransh Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            },
+            "18-19": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/rudransh_soni_pp.jpeg",
+                "booked_by": "Rudransh Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            },
+            "19-20": "Available",
+            "20-21": "Available",
+            "21-22": "Available"
+          },
+          "court B": {
+            "8-9": "Available",
+            "9-10": "Available",
+            "11-12": "Available",
+            "12-13": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/sunil_soni_pp.jpeg",
+                "booked_by": "Sunil Soni",
+                "booked_datetime": "28/04/2023 15:03:56.456",
+                "is_new_joinee": true
+              }
+            },
+            "13-14": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/sunil_soni_pp.jpeg",
+                "booked_by": "Sunil Soni",
+                "booked_datetime": "28/04/2023 15:03:56.456",
+                "is_new_joinee": true
+              }
+            },
+            "14-15": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/sunil_soni_pp.jpeg",
+                "booked_by": "Sunil Soni",
+                "booked_datetime": "28/04/2023 15:03:56.456",
+                "is_new_joinee": true
+              }
+            },
+            "15-16": "Available",
+            "16-17": "Available",
+            "18-19": "Available",
+            "19-20": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/vinayak_soni_pp.jpeg",
+                "booked_by": "Vinayak Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            },
+            "20-21": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/vinayak_soni_pp.jpeg",
+                "booked_by": "Vinayak Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            },
+            "21-22": {
+              "status": "Booked",
+              "no_of_hours": 3,
+              "booking_info": {
+                "img_src": "../assets/images/vinayak_soni_pp.jpeg",
+                "booked_by": "Vinayak Soni",
+                "booked_datetime": "29/04/2023 15:03:56.456",
+                "is_new_joinee": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

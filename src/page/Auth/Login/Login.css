@@ -1,0 +1,86 @@
+.appButton {
+  border: none !important;
+  padding-left: 0px !important;
+}
+.poster-container {
+  width: 600;
+  justify-content: center;
+}
+.poster-card {
+  display: flex !important;
+  position: sticky !important;
+  justify-content: center !important;
+}
+.login-logo {
+  width: 350px;
+  height: auto;
+  background: #524f7e;
+  border-radius: 20px;
+}
+.app-button-card {
+  display: flex !important;
+  position: sticky !important;
+  justify-content: center !important;
+}
+.app-logo {
+  width: 120px;
+  height: 40px;
+  background: #524f7e;
+}
+.login-container {
+  justify-content: center !important;
+  display: flex !important;
+}
+.login-card-container {
+  /* width: 100% !important; */
+  position: sticky !important;
+  justify-content: center !important;
+}
+.poster-col {
+  justify-content: center !important;
+  margin-top: 5% !important;
+  margin-block: 5% !important;
+  background-color: #ffffff !important;
+  border-radius: 16px !important;
+  box-shadow: rgba(0, 0, 0.3, 0.2) 0px 5px 10px !important;
+  flex-direction: row !important;
+  display: flex !important;
+  margin-inline: 10px !important;
+}
+.login-form-container {
+  margin: 20px !important;
+  width: 400px !important;
+}
+.login-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.signin {
+  font-size: 16px;
+  font-weight: 600;
+}
+.forgotPassword-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+.forgotPassword-link {
+  color: #f17121;
+  font-weight: bold;
+  text-align: end;
+}
+
+.login-row {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 425px) {
+  .login-logo{
+    width :270px;
+  }
+    .login-form-container {
+      width: 290px !important;
+    }
+  
+}

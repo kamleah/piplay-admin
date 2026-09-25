@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-sec {    
+    text-align: center;
+}
+
+.logo-sec .logo {
+    height: 700px;
+    margin-top: 30px;
+}
+
+.little-content .some-word {
+    color: #F17121;
+    padding-right: 10px;
+}
+
+.little-content {
+    color: #fff;
+}
+
+.inner-container {
+    text-align: center;
+    margin-top: -196px;
+}
+
+.inner-container h2 {
+    font-family: sans-serif;
+    color: #f8f8f8;
+}
+
+.inner-container h3 {
+    font-family: sans-serif;
+    color: #ffffff;    
+}
+
+.inner-container h4 {
+    font-family: sans-serif;
+    color: #fff;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.png-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.png-container img {
+    width: auto;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .logo-sec .logo {
+        height: 500px;        
+    }
+
+    .inner-container {
+        margin-top: -134px;
+    }
+
+    .inner-container h2 {
+        font-size: 1.5em;
+    }
+
+    .inner-container h3 {
+        font-size: 1.2em;
+    }
+
+    .inner-container h4 {
+        font-size: 1em;
+    }
+
+    .png-container {
+        margin-top: 5px;
+        
+    }
+
+    .png-container img {
+        width: 130px;        
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .logo-sec .logo {
+        height: 341px;
+        margin-top: 10px;
+    }
+
+    .inner-container {  
+        margin-top: -106px;      
+    }
+
+    .inner-container h2 {
+        font-size: 15px;
+    }
+
+    .inner-container h3 {
+        font-size: 15px;
+    }
+
+    .inner-container h4 {
+        font-size: 0.8em;
+    }
+
+    .png-container img {
+        width: 120px;
+        margin-bottom: 5px;
+    }
+    .png-container{
+        margin-top: -8px;
+    }
+}

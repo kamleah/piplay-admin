@@ -1,0 +1,262 @@
+.playerContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.label {
+    min-width: 100px;
+    max-width: 120px;
+    padding: 4px;
+    border-radius: 20px;
+    display: flex;
+    align-Items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hostlabel {
+    background-color: #F17121;
+}
+
+.partnerlabel {
+    background-color: #1E73B6;
+}
+
+.invitedlabel {
+    background-color: #1E73B6;
+}
+
+.coachlabel {
+    background-color: #003F70;
+}
+
+.max-width-container{
+    width: 100%;
+}
+
+.max-width-container .coachlabel{
+  min-width: auto;
+}
+
+.labelTxt {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.userImage {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.userImageContainer {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+
+/* Skill Labels  */
+.label-outer {
+    min-width: 100px;
+    max-width: 120px;
+    border-radius: 20px;
+    align-Items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: #fff;
+}
+
+.label-outer-sm {
+    min-width: 92px;
+    max-width: 80px;
+    border-radius: 20px;
+    align-Items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: #fff;
+}
+
+.label-inner {
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+.label-inner-sm {
+    padding: 0 5px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+.Beginner-outer {
+    border: 1px solid #6CD24B;
+}
+
+.Beginner-inner {
+    width: 30%;
+    background-color: #6CD24B;
+}
+
+.Intermediate-outer {
+    border: 1px solid #FCAA05;
+}
+
+.Beginner-outer {
+    border: 1px solid #6CD24B;
+}
+
+.Beginner-inner {
+    width: 30%;
+    background-color: #6CD24B;
+}
+
+.Amateur-outer {
+    border: 1px solid #FCAA05;
+}
+
+.Amateur-inner {
+    width: 60%;
+    background-color: #FCAA05;
+}
+
+.Intermediate-outer {
+    border: 1px solid #FD674D;
+}
+
+.Intermediate-inner {
+    width: 75%;
+    background-color: #FD674D;
+    color: #fff;
+}
+
+.Advance-outer,
+.Advanced-outer {
+    border: 1px solid #E43836;
+}
+
+.Advance-inner,
+.Advanced-inner {
+    width: 95%;
+    background-color: #E43836;
+    color: #fff;
+}
+
+
+/* status label */
+
+.status-label {
+    min-width: 100px;
+    max-width: 120px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status-Rejected {
+    background: #E15B5B30;
+    color: #E15B5B;
+}
+
+.status-Accepted,
+.status-Pair.Accepted,
+.status-Add,
+.status-Active,
+.status-Success {
+    background: #25F12130;
+    color: #689B08;
+}
+
+.status-Manual {
+    background: #e6f70130;
+    color: #9b8c08;
+}
+.status-Released,
+.status-Pair.Invited,
+.status-Edit,
+.status-Paused,
+.status-Invited,
+.status-Pending {
+    background: #F1712130;
+    color: #F17121;
+}
+
+.status-Pair.Rejected,
+.status-Delete,
+.status-Cancelled {
+    background: #EE313130;
+    color: #EE3131;
+}
+
+.status-Expired,
+.status-Inactive,
+.status-Failed {
+    background: #E15B5B30;
+    color: #E15B5B;
+}
+
+.status-Solo,
+.status-Scheduled,
+.status-All {
+    background: #665AF230;
+    color: #665AF2;
+}
+
+.status-View {
+    background: #003F7030;
+    color: #003F70;
+}
+
+.status-Export {
+    background: #E2BE0030;
+    color: #E2BE00;
+}
+
+
+.lable-content-width .label,
+.lable-content-width .label-outer,
+.lable-content-width .status-label {
+    min-width: 120px;
+    max-width: max-content;
+    /* to set the width of label as per content in some cases */
+}
+
+.permissions-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.permissions-container .status-label {
+    min-width: max-content !important;
+    max-width: max-content !important;
+}
+
+.capi{
+    text-transform: capitalize;
+}
+
+.max-width-container .status-label{
+   min-width: 100%;
+   max-width: 100%;
+}

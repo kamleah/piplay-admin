@@ -1,0 +1,25 @@
+/* Custom CSS for the table rows */
+.custom-row {
+    min-height: 72px;
+    border-bottom: 1px solid #EBEBEB;
+  }
+  
+  /* Active pagination item */
+  .ant-pagination-item-active a {
+    color: white !important;
+  }
+  
+  /* Default color for other pagination items */
+  .ant-pagination-item a {
+    color: #003F70;
+  }
+  
+  /* Pagination hover effect */
+  .ant-pagination-item:hover a {
+    color: #003F70;
+  }
+  
+  .ant-pagination-prev, .ant-pagination-next {
+    color: #003F70;
+  }
+  

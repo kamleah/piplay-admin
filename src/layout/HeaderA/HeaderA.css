@@ -1,0 +1,90 @@
+.nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: #f1f1f3;
+  width: auto;
+  justify-content: right;
+  align-items: end;
+  padding: 0 30px;
+  height: auto;
+}
+
+.nav-search {
+  margin-left: 2%;
+  text-align: center;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.nav-open-search {
+  text-align: center;
+  width: 300px;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #DDDDDD;
+  padding: 10px 0;
+}
+
+.nav-open {
+  margin-left: 250px;
+  /*same as sidbar width*/
+}
+
+.nav-close {
+  margin-left: 60px;
+}
+
+.nav-profile {
+  text-align: end;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e2e2f;
+  position: relative;
+}
+
+.universal-search-form {
+  width: 40%;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-profile-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 17px;
+  gap: 3px;
+}
+
+.header-profile .roleName {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #727272;
+}
+
+.mobile-menu {
+line-height: normal;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width: 768px) {
+  .nav-header {
+    padding: 0 15px;
+  }
+}
+@media(max-width: 425px) {
+  .nav-header {
+    padding: 0 10px;
+  }
+}

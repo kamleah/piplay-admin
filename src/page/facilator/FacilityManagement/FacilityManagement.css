@@ -1,0 +1,137 @@
+.btn-getFacility {
+  border-color: #f17121;
+  border-radius: 50%;
+  padding: 4px 6px;
+  background: #fff;
+}
+.btn-getFacility span {
+  color: #f17121;
+}
+
+.btn-getFacility:hover {
+  cursor: pointer;
+  background-color: #f17121;
+}
+.btn-getFacility:hover span {
+  color: #fff;
+}
+.btn-addNewFacility {
+  float: right;
+  border-radius: 30px;
+  /* font-weight: 510; */
+  background: #f17121;
+  border: none;
+  color: #fff;
+
+}
+
+.btn-addNewFacility:hover {
+  color: #fff !important;
+  background: #dc671f;
+
+}
+
+.top-margin {
+  top: 20px;
+}
+
+.facility-div {
+  margin-left: -10px;
+  margin-top: 20px;
+}
+
+.facility-txt {
+  font-weight: bold;
+  font-size: 18px;
+  align-content: left;
+}
+
+:where(.css-dev-only-do-not-override-17sses9).ant-input:focus,
+:where(.css-dev-only-do-not-override-17sses9).ant-input:focus-within {
+  border-color: black !important;
+  box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 1px !important;
+}
+
+:where(.css-dev-only-do-not-override-17sses9).ant-input:hover {
+  border-color: #d9d9d9 !important;
+}
+
+
+/* General styling */
+.add-ons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-ons-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  display: inline-block;
+  border: 2px dashed #f17121;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button span {
+  color: #f17121;
+  font-size: 18px;
+}
+
+.equipment-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default layout */
+  gap: 15px;
+  margin-top: 60px;
+}
+
+.equipment-title {
+  font-size: 17px;
+  margin-top: 30px;
+  color: #f17121;
+  margin-bottom: 10px;
+}
+
+.add-more-btn {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive for mobile: one column layout */
+@media (max-width: 768px) {
+  .form-container-grid-3 {
+    grid-template-columns: 1fr; 
+  }
+
+  .equipment-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .equipment-title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .add-more-btn, .delete-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .det-icon {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .delete-btn, .add-more-btn {    
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}

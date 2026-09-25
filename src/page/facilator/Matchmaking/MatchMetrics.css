@@ -1,0 +1,39 @@
+.match-chart-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.wise-card-title-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.capsule-container{
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+}
+
+.green-capsule{
+  background-color: #4ADE80;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+  max-width: max-content;
+}
+
+.match-dashboard-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 3px 4px 9px 0px #34468330;
+}
